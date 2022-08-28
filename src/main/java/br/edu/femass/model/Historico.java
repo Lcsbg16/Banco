@@ -28,7 +28,7 @@ public class Historico {
 
     @Override
     public String toString() {
-        return data.format(DateTimeFormatter.ofPattern("dd/MM/yyy HH:mm:ss")) + " - Valor:" + this.valor.toString() + " - " + this.tipoLancamento;
+        return data.format(DateTimeFormatter.ofPattern("dd/MM/yyy HH:mm:ss")) + " - Valor:" + this.valor.toString() + " - " + this.tipoLancamento.valor;
 
     }
 }

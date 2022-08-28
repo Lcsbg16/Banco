@@ -55,7 +55,7 @@ public class Conta {
     }
 
     public void debitar(Double valor){
-        if (valor<this.saldo + this.especial){
+        if (valor>this.saldo + this.especial){
             throw new IllegalArgumentException("Saldo insuficiente!");
         }
         this.saldo-=valor;
